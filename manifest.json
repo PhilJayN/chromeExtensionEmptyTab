@@ -12,6 +12,19 @@
     "default_popup": "popup.html"
   },
 
+  "content_scripts":[
+    {
+      "matches": ["https://css-tricks.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+
+  "permissions": [
+     "tabs",
+     "https://css-tricks.com/*"
+   ],
+
   "chrome_url_overrides": {
     "newtab": "empty.html"
   }

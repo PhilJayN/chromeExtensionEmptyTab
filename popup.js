@@ -1,3 +1,10 @@
+//
+// chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+//   chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
+//       console.log(response.farewell);
+//   });
+// });
+
 console.log('popup js running rrrrrrrrr');
 
 
@@ -10,29 +17,38 @@ console.log('popup js running rrrrrrrrr');
 // });
 
 
-function changeBackgroundColor () {
-
-}
 
 document.addEventListener('DOMContentLoaded', function () {
-  var popupBody = document.querySelector('.popup-body');
   var emptyBody = document.querySelector('.empty-body');
-  alert(emptyBody);
-
-  console.log('el:', popupBody, emptyBody);
-  var magicBtn = document.querySelector('.magic-btn');
-  console.log('popup el', popupBody);
-  magicBtn.addEventListener('click', function() {
-    console.log('clicked btn');
-    popupBody.style.backgroundColor = 'green';
-  });
-
+emptyBody.style.backgroundColor="red";
   // magicBtn.addEventListener('click', function() {
   //   console.log('clicked btn');
   //   popupBody.style.backgroundColor = 'green';
   // });
 
 });
+
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   var popupBody = document.querySelector('.popup-body');
+//   var emptyBody = document.querySelector('.empty-body');
+//
+//   console.log('el:', popupBody, emptyBody);
+//   var magicBtn = document.querySelector('.magic-btn');
+//   console.log('popup el', popupBody);
+//   magicBtn.addEventListener('click', function() {
+//     console.log('clicked btn');
+//     // popupBody.style.backgroundColor = 'green';
+//     document.body.style.backgroundColor="red";
+//   });
+//
+//   // magicBtn.addEventListener('click', function() {
+//   //   console.log('clicked btn');
+//   //   popupBody.style.backgroundColor = 'green';
+//   // });
+//
+// });
 
 
 
