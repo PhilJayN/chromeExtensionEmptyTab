@@ -1,9 +1,17 @@
+
 {
   "name": "Hide Most Visted and Empty Tab",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Opening a new tab shows an empty tab, instead of showing a tab showing thumbnails of most visted sites.",
+
+  "description": "Opening a new tab shows an empty tab, instead of showing a tab with thumbnails of most visted sites.",
   "icons": {"128": "icon_128.png"},
+
+  "browser_action": {
+    "default_title": "Empty blank tab no thumbnails!",
+    "default_popup": "popup.html"
+  },
+
   "chrome_url_overrides": {
     "newtab": "empty.html"
   }
