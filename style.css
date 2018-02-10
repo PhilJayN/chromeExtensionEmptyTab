@@ -1,11 +1,10 @@
 /*Styling for popup.html*/
-body {
-  background-color: pink;
+.popup-body {
+  background-color: goldenrod;
 }
 
 
 /*Styling for empty.html*/
-
 .empty-body {
-  background-color: blue;
+  background-color: gray;
 }
